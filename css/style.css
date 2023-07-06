@@ -45,6 +45,7 @@ img, picture, video, canvas, svg {
     --second-bg:#2d2d2d;
 
     --main-redius:3px;
+    --main-margin:1rem;
 
 }
 html{
@@ -249,11 +250,11 @@ nav .container ul a:hover{
 .contentbox{
     background-color: var(--main-bg);
     border-radius: var(--main-redius);
-
+    padding: 0.3rem 1rem 1rem;
 }
 /* start  series_info*/
 .contentbox .series_info{
-    padding:.3rem 1rem 1rem;
+    /* padding:.3rem 1rem 1rem; */
 }
 .contentbox .series_info h1 a{
     font-size: 1.5rem;
@@ -324,3 +325,60 @@ nav .container ul a:hover{
 }
 }
 /* end  series_info*/
+
+/*  start video  */
+.container .contentbox .main_video{
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    background-color: var(--main-bg);
+    position: relative;
+}
+.container .contentbox .pasue{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    cursor: pointer;
+
+}
+.container .contentbox .pasue:hover{
+    color: #878383;
+}
+/*  end video  */
+/* start server */
+.container .contentbox .servers{}
+.container .contentbox .servers .server{
+    margin: var(--main-margin) 0;
+}
+.container .contentbox .servers .server h4{
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(20 20 20);
+    border-radius: 3px;
+}
+.container .contentbox .servers .server .episodes{
+    background-color: var(--second-bg);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    flex-wrap: wrap;
+}
+.container .contentbox .servers .server .episodes p{
+    background-color: #537b1c;
+    color: var(--white);
+    font-weight: normal;
+    padding: 0.5rem 1rem;
+    border-radius: var(--main-redius);
+    cursor: pointer;
+}
+
+
+.container .contentbox .servers .server .episodes p:hover{
+    background-color: #6fad1b;
+}
+/* end server */
