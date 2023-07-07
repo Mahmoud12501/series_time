@@ -382,3 +382,33 @@ nav .container ul a:hover{
     background-color: #6fad1b;
 }
 /* end server */
+/* start seasons */
+.container .contentbox .all__seasons{}
+.container .contentbox .all__seasons h4{
+    color: red;
+    font-weight: bold;
+}
+.container .contentbox .all__seasons .seasons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+    margin: 1rem 0;
+    gap: 10px;
+}
+.container .contentbox .all__seasons .seasons .season_info{}
+.container .contentbox .all__seasons .seasons .season_info img{
+    width: 143px;
+    height: 190px;
+}
+.container .contentbox .all__seasons .seasons .season_info a{
+    max-width: 150px;
+    text-align: center;
+    color: #666;
+    padding: 0.6rem 0;
+    transition: .2s;
+}
+.container .contentbox .all__seasons .seasons .season_info a:hover{
+    color: var(--hover-color);
+}
+/* end  seasons */
+
+
